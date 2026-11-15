@@ -26,7 +26,7 @@ Claude keeps no memory between conversations here. This file, `PROGRESS.md` and 
 
 When the owner says "close the session", or a problem is cleared:
 
-1. Write or update the topic note in `notes/week-NN/<topic>.md` using `notes/templates/topic-note.md`. Include the owner's actual mistakes in "Where I went wrong". Add the page to the sidebar in `notes/.vitepress/config.js`.
+1. Write or update the topic note in `notes/week-NN/<topic>.md` using `notes/templates/topic-note.md`. Every note must include a precise definition, a plain-words explanation, and at least one runnable example with its exact output and a step-by-step explanation of why. Include the owner's actual mistakes in "Where I went wrong". Add the page to the sidebar in `notes/.vitepress/config.js`.
 2. Add every wrong answer to `notes/gotchas.md` and every question the owner asked to `notes/questions-log.md`.
 3. Add the solved problem under `problems/week-NN/<name>/` in the shape of `problems/_example/pipe/`. The code is the owner's code, as cleared in the session. Do not silently rewrite it.
 4. Save any graded critique under `reviews/week-NN/`.
@@ -42,6 +42,10 @@ When the owner says "close the session", or a problem is cleared:
 - `npm run check` passes and CI is green
 
 Never push code that has not met this bar, and never skip or weaken a test to get a green run.
+
+## Where the owner works
+
+The owner's local copy is at `C:\Users\gaura\Desktop\Lance\frontend-mastery` (Windows). Quiz answers go in the chat. Problem solutions are written in the local copy under `problems/week-NN/<name>/`, then read from there for the defend step.
 
 ## Conventions
 
