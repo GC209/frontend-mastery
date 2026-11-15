@@ -1,0 +1,30 @@
+{
+  "name": "frontend-mastery",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Frontend interview and AI-code-review prep: notes, solved problems with tests, and code reviews.",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run lint && npm run typecheck && npm run test",
+    "notes:dev": "vitepress dev notes",
+    "notes:build": "vitepress build notes",
+    "notes:preview": "vitepress preview notes"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "esbuild": "^0.28.2",
+    "eslint": "^10.15.0",
+    "globals": "^17.14.0",
+    "jsdom": "^31.0.1",
+    "typescript": "^7.0.2",
+    "vitepress": "^1.6.4",
+    "vitest": "^5.1.0"
+  }
+}
